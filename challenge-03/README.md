@@ -155,3 +155,75 @@ correta, de acordo com os dados inseridos no objeto.
 // Agora, apresente-se ;)
 ?
 ```
+
+
+
+
+
+
+// Declarar uma variável qualquer, que receba um objeto vazio.
+var myObj = {};
+
+var pessoa = { 
+            nome: 'everton', 
+            sobrenome: 'gomes',
+            sexo: 'masculino',
+            idade: 23,
+            altura: 1.78, 
+            peso: 100,
+            andando: false,
+            caminhouQuantosMetros: 0
+}         
+
+
+pessoa.aniversario = function(){
+    pessoa.idade++
+}
+
+
+
+pessoa.andar = function(numMetros){
+   
+    pessoa.andando = true;
+     pessoa.caminhouQuantosMetros = pessoa.caminhouQuantosMetros + numMetros;
+    // return pessoa.caminhouQuantosMetros
+}
+
+
+pessoa.parar = function(){
+
+    pessoa.andando = false;
+
+ //   return pessoa.andando
+}
+
+pessoa.nomeCompleto = function(){
+
+    return 'Olá! Meu nome é ' + pessoa.nome + ' '+ pessoa.sobrenome + '!';
+
+}
+
+pessoa.mostrarIdade = function(){
+    return  'Olá, eu tenho ' + pessoa.idade + ' anos!';
+}
+
+
+pessoa.mostrarPeso = function(){
+    return 'Eu peso ' + pessoa.peso + 'Kg.';
+}
+
+
+pessoa.mostrarAltura = function(){
+    return 'Eu tenho '+ pessoa.altura + ' m.';
+}
+
+
+pessoa.apresentacao = function(){
+
+if()
+
+
+
+return  'Olá, eu sou o ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' anos, ' + pessoa.altura + ', meu peso é '+ pessoa.peso  + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros +  ' Metros!';
+
+}
